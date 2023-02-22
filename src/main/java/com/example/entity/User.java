@@ -39,7 +39,10 @@ public class User {
     @Column(updatable = false)
     private LocalDateTime createdDate;
 
+    @Transient
     private Collection<? extends GrantedAuthority> authorties;
+
+    public User(){}
     @PrePersist
     protected void onCreate(){
         this.createdDate = LocalDateTime.now();
