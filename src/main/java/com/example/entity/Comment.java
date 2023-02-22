@@ -1,4 +1,4 @@
 package com.example.entity;
 
-public class Commet {
+public class Comment {
 }
